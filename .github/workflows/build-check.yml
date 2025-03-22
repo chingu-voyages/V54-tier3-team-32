@@ -18,9 +18,10 @@ jobs:
           node-version: "20"
 
       - name: Set up environment variables
+        if: github.event.pull_request.head.repo.full_name == github.repository
         run: |
-          echo "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=${{ secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY }}" >> $GITHUB_ENV
-          echo "CLERK_SECRET_KEY=${{ secrets.CLERK_SECRET_KEY }}" >> $GITHUB_ENV
+            echo "NEXT_PUBLIC_CLERK_FRONTEND_API=${NEXT_PUBLIC_CLERK_FRONTEND_API}" >> .env.local
+            echo "CLERK_API_KEY=${CLERK_API_KEY}" >> .env.local
 
       - name: Install dependencies
         run: npm install
