@@ -19,8 +19,8 @@ jobs:
 
       - name: Set up environment variables
         run: |
-          echo "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=${{ secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY }}" >> .env.local
-          echo "CLERK_SECRET_KEY=${{ secrets.CLERK_SECRET_KEY }}" >> .env.local
+          echo "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=${{ secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY }}"
+          echo "CLERK_SECRET_KEY=${{ secrets.CLERK_SECRET_KEY }}"
 
       - name: Install dependencies
         run: npm install
