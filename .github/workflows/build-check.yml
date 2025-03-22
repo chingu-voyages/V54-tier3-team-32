@@ -1,9 +1,9 @@
 name: Build Check
 
 on:
-  pull_request: 
+  pull_request:
     branches:
-      - main 
+      - main
 
 jobs:
   build:
@@ -19,8 +19,8 @@ jobs:
 
       - name: Set up environment variables
         run: |
-          echo "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=${{ secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY }}"
-          echo "CLERK_SECRET_KEY=${{ secrets.CLERK_SECRET_KEY }}"
+          echo "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=${{ secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY }}" >> $GITHUB_ENV
+          echo "CLERK_SECRET_KEY=${{ secrets.CLERK_SECRET_KEY }}" >> $GITHUB_ENV
 
       - name: Install dependencies
         run: npm install
