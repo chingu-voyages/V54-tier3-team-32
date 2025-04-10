@@ -47,12 +47,12 @@ function App() {
       className="min-h-screen bg-cover bg-center text-white"
       style={{ backgroundImage: "url('/room.png')" }}
     >
-      <div className="min-h-screen px-4 py-8 bg-black/50 backdrop-blur-sm">
+      <div className="min-h-screen px-4 py-8 bg-black/20 backdrop-blur-sm">
         <h1 className="text-5xl font-bold text-center mb-8">HushRoom</h1>
 
         {!joined ? (
           <div className="flex flex-col items-center space-y-6">
-            <div className="bg-black/30 p-6 rounded-lg shadow-lg w-full max-w-md backdrop-blur-md">
+            <div className="bg-black/20 p-6 rounded-lg shadow-lg w-full max-w-md backdrop-blur-md">
               <h2 className="text-xl font-semibold mb-4">Join a Room</h2>
               <input
                 type="text"
@@ -66,7 +66,7 @@ function App() {
               </button>
             </div>
 
-            <div className="bg-black/30 p-6 rounded-lg shadow-lg w-full max-w-3xl space-y-6 backdrop-blur-md">
+            <div className="bg-black/20 p-6 rounded-lg shadow-lg w-full max-w-3xl space-y-6 backdrop-blur-md">
               <div>
                 <h3 className="text-2xl font-semibold mb-2">🔍 How to Use</h3>
                 <p>
@@ -85,20 +85,20 @@ function App() {
                   <li>Clean, minimal UI</li>
                 </ul>
               </div>
-              <a
+              {/* <a
                 href="https://github.com/prakshh/hushRoom"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 underline hover:text-blue-300"
               >
                 View full README on GitHub
-              </a>
+              </a> */}
             </div>
           </div>
         ) : (
           <div className="flex flex-col items-center space-y-4">
             <div className="w-full max-w-xl">
-              <div className="h-96 overflow-y-auto border border-gray-700 p-4 mb-4 rounded bg-black/30 backdrop-blur-md">
+              <div className="h-96 overflow-y-auto border border-gray-700 p-4 mb-4 rounded bg-black/20 backdrop-blur-md">
                 {messages.map((m, i) => (
                   <div key={i} className="mb-2">
                     <span className="font-bold">{m.sender}:</span> {m.message}
