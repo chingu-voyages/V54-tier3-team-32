@@ -2,7 +2,7 @@
 
 ## [LIVE Demo](https://hush-room.vercel.app/)
 
-![homepage](anonymous-chat-app\client\public\homepage.png)
+![homepage](anonymous-chat-app/client/public/homepage.png)
 
 ## Project Overview
 
