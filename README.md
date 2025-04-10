@@ -2,6 +2,10 @@
 
 ## [LIVE Demo](https://hush-room.vercel.app/)
 
+![homepage](anonymous-chat-app\client\public\homepage.png)
+
+## Project Overview
+
 **HushRoom** is a real-time anonymous chat app that connects strangers for private one-on-one conversations. No login, no identity — just pure conversation.
 
 --- 

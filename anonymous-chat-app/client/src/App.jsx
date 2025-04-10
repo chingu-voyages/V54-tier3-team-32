@@ -49,7 +49,7 @@ function App() {
     >
       <div className="min-h-screen px-4 py-8 bg-black/20 backdrop-blur-sm">
         {/* <h1 className="text-5xl font-bold text-center mb-8"> */}
-        <h1 className="text-5xl font-bold text-center mb-8 flex items-center justify-center space-x-4">
+        <h1 className="text-4xl font-bold text-center mb-8 flex items-center justify-center space-x-4">
           <img src="/logo-mushroom.png" alt="HushRoom Logo" className="w-12 h-12" />
           <span>HushRoom</span>
         </h1>
